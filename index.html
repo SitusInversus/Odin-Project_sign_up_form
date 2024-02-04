@@ -18,13 +18,40 @@
         </p>
     </section>
     <main>
-        <div>
+        <div class="top_section">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et laborum, nam nihil in amet eligendi recusandae earum esse dolores maxime enim fugiat fuga impedit nobis? Veritatis quod nam quis vero.</p>
             <p>Lorem ipsum dolor sit amet.</p>
         </div>
-        <form action="">
-
-        </form>
+        <form id="user_data" action="" method="post">
+            <legend><em>Lorem ipsum dolor!</em></legend>
+            <p>Required fields: <span aria-label="required">*</span></p>
+            <fieldset>
+                <label for="user_first_name">
+                    First Name<span>*</span>
+                    <input type="text" name="user_first_name" id="user_first_name" placeholder="Thor" required pattern="[a-z,A-Z]+" minlength="1" maxlength="30" >
+                </label>
+                <label for="user_last_name">
+                    Last Name
+                    <input type="text" name="user_last_name" id="user_last_name" placeholder="Odinson" pattern="[a-z,A-Z]*" minlength="1" maxlength="30">
+                </label>
+                <label for="user_email">
+                    Email<span>*</span>
+                    <input type="email" name="user_email" id="user_email" placeholder="thor.odinson@rag.rk">
+                </label>
+                <label for="user_phone">
+                    Telephone
+                    <input type="tel" name="user_phone" id="user_phone" placeholder="01423594175"minlength="9" maxlength="12" pattern="[0-9]{9,12}">
+                </label>
+                <label for="password_first" class="error"> 
+                    Password<span>*</span>
+                    <input type="password" name="password" id="password_first" required>
+                </label>
+                <label for="password_second" class="error">
+                    Confirm Password<span>*</span>
+                    <input type="password" name="password" id="password_second" required>
+                </label>
+            </fieldset>
+         </form>
         <div>
             <button>Create Account</button>
             <p>Already have an account? <a href="">Log in</a></p>
