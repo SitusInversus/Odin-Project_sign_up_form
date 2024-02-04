@@ -10,6 +10,7 @@
 }
 
 body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif
     background-color: white;
     display: flex;
 }
@@ -28,7 +29,7 @@ section {
 }
 
 section > .container_logo {
-    height: max(20dvh, 200px);
+    height: max(15dvh, 150px);
     width: 37dvw;
 
     background-color:rgba(0, 0, 0, 0.568);
@@ -49,7 +50,7 @@ section > p {
 }
 
 .container_logo >  img {
-    height: max(15dvh, 150px);
+    height: max(12dvh, 120px);
 
     display: block;
 }
@@ -57,21 +58,104 @@ section > p {
 .container_logo > div {
     padding-top: 1.2rem;
 
-    font-size: max(4.6875rem, 7.5dvh);
+    font-size: max(5rem, 7.5dvh);
     font-family: "norse", 'Times New Roman', Times, serif;
 }
 
 main {
     min-width: 63dvw;
-    padding-left: 2rem;
 
-    background-color: beige;
+    font-size: 1.5rem;
+    font-weight: 525;
+
+    background-color: white;
+
     display: flex;
     flex-direction: column;
-    
+    justify-content: center;
 }
 
-
 .top_section p {
-    max-width: 60ch;
+    max-width: 50ch;
+    margin-bottom: 1rem;
+}
+
+.top_section :last-child {
+    margin-bottom: 2.5rem;
+}
+
+form {
+    display: flex;
+    flex-flow: wrap column;
+    box-shadow: 0px 6px 4px 0px rgba(0, 0, 0, 0.19), 0 -1px 3px 1.5px rgba(0, 0, 0, 0.047);
+}
+
+form > *, .top_section, .bottom_section {
+    padding-left: 2rem;
+}
+
+legend {
+    margin-top: 1rem;
+    padding-top: rem;
+}
+fieldset {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-right: 3rem;
+
+    font-size: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: center;
+ 
+    gap: 2rem 3rem;
+    
+    border: 0;
+    
+}   
+
+label {
+    font-size: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.2rem;
+    max-width: 13rem;
+}
+input {
+    background-color: white;
+    border: 1px solid #E5E7EB;
+    appearance: none;
+    font-size:  1.2rem;
+    border-radius: 5px;
+    z-index: 1;
+    width: 30ch;
+    padding-left: 0.2rem 1rem;
+}
+
+input:focus-visible, input:hover, input:focus {
+    outline: 0;
+    border-radius: 5px;
+    border-color: blue;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 5px 15px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+button {
+   color: #E5E7EB;
+   margin-top: 3rem;
+   background-color: #596D48;
+   font-size: 1.4rem;
+   border-radius: 10px;
+   padding: 0.5rem 2rem;
+}
+
+.bottom_section > * {
+    margin-top: 2rem
+}
+
+a {
+    color: #596D48;
+    text-decoration: 0;
+    font-weight: 550;
 }
