@@ -1,11 +1,63 @@
 @font-face {
     font-family: "norse";
-    src: url(/external_files/Norse-Bold.otf);
+    src: url(/external_files/Norse-Bold.otf) format("opentype");
 }
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    border: 1px red solid;
+    /* border: 1px red solid; */
 }
+
+body {
+    background-color: white;
+}
+section {
+    width: 37dvw;
+    height: 100dvh;
+
+    color: white;
+    background-image: url(/external_files/halie-west-highres.jpeg);
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+section > .container_logo {
+    min-height: max(20dvh, 200px);
+    width: 37dvw;
+
+    background-color:rgba(0, 0, 0, 0.568);
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1dvw;
+}
+
+section > p {
+    min-width: 37dvw;
+    margin-bottom: 1.5dvh;
+
+    align-self: flex-end;
+    text-align: center;
+}
+
+.container_logo >  img {
+    height: max(15dvh, 150px);
+
+    display: block;
+}
+
+.container_logo > div {
+    padding-top: 1.2rem;
+
+    font-size: max(4.6875rem, 7.5dvh);
+    font-family: "norse", 'Times New Roman', Times, serif;
+}
+
