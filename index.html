@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Odin Project, Sign Up Form</title>
-    <link rel="stylesheet" href="../CSS/stylesheet.css">
-    <script src="../JAVASCRIPT/script.js" defer></script>
+    <link rel="stylesheet" href="./CSS/stylesheet.css">
+    <script src="./JAVASCRIPT/script.js" defer></script>
 </head>
 <body>
     <section>
@@ -22,37 +22,44 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et laborum, nam nihil in amet eligendi recusandae earum esse dolores maxime enim fugiat fuga impedit nobis? Veritatis quod nam quis vero.</p>
             <p>Lorem ipsum dolor sit amet.</p>
         </div>
-        <form id="user_data" action="" method="post">
+        <form id="user_data" class="validate" action="" method="post">
             <legend>Lorem ipsum dolor!</legend>
             <fieldset>
-                <label for="user_first_name">
+                <label for="user_first_name" data="six">
                     FIRST NAME
-                    <input type="text" name="user_first_name" id="user_first_name"  required pattern="[a-z,A-Z]+" minlength="1" maxlength="30" >
+                    <input type="text" name="user_first_name" id="user_first_name" required pattern="[a-z,A-Z]+" minlength="1" maxlength="30" value="chris">
+                    <span class="error"></span>
                 </label>
                 <label for="user_last_name">
                     LAST NAME
-                    <input type="text" name="user_last_name" id="user_last_name"  pattern="[a-z,A-Z]*" minlength="1" maxlength="30">
+                    <input type="text" name="user_last_name" id="user_last_name"  pattern="[a-z,A-Z]+" minlength="1" maxlength="30">
+                    <span class="error"></span>
                 </label>
                 <label for="user_email">
                     EMAIL
                     <input type="email" name="user_email" id="user_email" >
+                    <span class="error"></span>
+                    
                 </label>
                 <label for="user_phone">
                     TELEPHONE
                     <input type="tel" name="user_phone" id="user_phone" minlength="9" maxlength="12" pattern="[0-9]{9,12}">
+                    <span class="error"></span>
                 </label>
-                <label for="password_first" class="error"> 
+                <label for="password_first"> 
                     PASSWORD
                     <input type="password" name="password" id="password_first" required>
+                    <span class="error"></span>                    
                 </label>
-                <label for="password_second" class="error">
+                <label for="password_second">
                     CONFIRM PASSWORD
                     <input type="password" name="password" id="password_second" required>
+                    <span class="error"></span>                    
                 </label>
             </fieldset>
          </form>
         <div class="bottom_section">
-            <button>Create Account</button>
+            <button type="submit" for="user_data">Create Account</button>
             <p>Already have an account? <a href="randomlink">Log in</a></p>
         </div>
     </main>
