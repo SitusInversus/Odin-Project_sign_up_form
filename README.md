@@ -26,8 +26,8 @@ Approach:
 5. Set up external files and given properties (colors)
 6. Setup markup and css without error handling. Styling should be similar but not identical
 
-7. Javascript: Type of Errors a. field is empty b. pattern doesnt match c. pw 1 and pw2 arent matching
+7. Error handling, use native elements and js. Type of Errors a. field is empty b. pattern doesnt match c. pw 1 and pw2 arent matching
 
-8. Add Media Query for devices with 600px width or less
+9. Add Media Query for devices with 600px width or less
    
 
