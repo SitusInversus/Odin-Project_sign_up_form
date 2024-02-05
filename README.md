@@ -21,10 +21,13 @@ Approach:
 1. Analyse the given design file and scaffold the structure of the page
 2. Partition the structure into functional units and set order of completion
 
-3. Setup a Repository with a html file linked to a stylesheet and script.
-4. Prepare external files: Odin-Logo, Background-Image, Fonts
+3. Setup a repository with a html file linked to a stylesheet and script.
+4. Prepare external files: Odin-Logo, Background-Image, fonts
 5. Set up external files and given properties (colors)
+6. Setup markup and css without error handling. Styling should be similar but not identical
 
+7. Error handling, use native html properties and js. Type of Errors a. field is empty b. pattern doesnt match c. pw 1 and pw2 arent matching
 
+9. Add Media Query for devices with 600px width or less
    
 
