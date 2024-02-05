@@ -1,6 +1,6 @@
 @font-face {
     font-family: "norse";
-    src: url(/external_files/Norse-Bold.otf) format("opentype");
+    src: url(../external_files/Norse-Bold.otf) format("opentype");
 }
 * {
     padding: 0;
@@ -38,7 +38,7 @@ section {
     min-height: 100dvh;
 
     color: white;
-    background-image: url(/external_files/halie-west-highres.jpeg);
+    background-image: url(../external_files/halie-west-highres.jpg);
     background-size: cover;
     background-position: center;
 
